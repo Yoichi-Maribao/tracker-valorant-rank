@@ -1,6 +1,6 @@
 import puppeteer from "puppeteer";
 import * as cheerio from "cheerio";
-import { userRepository } from "./repository/user";
+import { userRepository } from "../repository/user";
 
 export type Rank = "S" | "A" | "B" | "C" | "D";
 

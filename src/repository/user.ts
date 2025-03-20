@@ -1,5 +1,5 @@
 import { useSupabase } from "../lib/supabase";
-import { Rank } from "../util";
+import { Rank } from "../lib/util";
 
 export const userRepository = () => {
   const { supabase } = useSupabase();

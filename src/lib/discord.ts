@@ -1,6 +1,9 @@
 import { Client, GatewayIntentBits, SlashCommandBuilder } from "discord.js";
 import { userRepository } from "../repository/user";
-import { generateOutput, generateRanking } from "../util";
+import { generateOutput, generateRanking } from "./util";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 export const useDiscord = () => {
   const client = new Client({ intents: [GatewayIntentBits.Guilds] });
